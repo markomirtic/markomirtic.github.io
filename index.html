@@ -30,7 +30,7 @@
 
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">Home</a>
+                        <a href="#home" class="nav__link active-link">Home</a>
                     </li>
 
                     <li class="nav__item">
@@ -52,6 +52,9 @@
                </div>
             </div> 
                <div class="nav__buttons">
+                    <!--Theme button-->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
                 <!--Toggle button-->
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="ri-menu-4-line"></i>
@@ -421,16 +424,15 @@
                     <a href="#about" class="footer__link">About</a>
                 </li>
 
-             <ul class="footer__links">
-                    <li>
-                        <a href="#services" class="footer__link">Services</a>
-                    </li>
+                <li>
+                    <a href="#services" class="footer__link">Services</a>
+                </li>
 
-            <ul class="footer__links">
-                     <li>
-                        <a href="#projects" class="footer__link">Projects</a>
-                     </li>
+                <li>
+                    <a href="#projects" class="footer__link">Projects</a>
+                </li>
             </ul>
+
             <span class="footer__copy">
                 &#169; All Rights Reserved By 
                 <a href="">Marko Mirtic.</a>
@@ -439,7 +441,9 @@
       </footer>
 
       <!--========== SCROLL UP ==========-->
-      
+      <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-drop-up-line"></i>
+      </a>
 
       <!--=============== SCROLLREVEAL ===============-->
       <script src=""></script>
