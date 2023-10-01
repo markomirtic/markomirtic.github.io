@@ -19,7 +19,7 @@
       <!--==================== HEADER ====================-->
       <header class="header" id="header">
          <nav class="nav container">
-            <a href="#" class="nav__logo">
+            <a href="#" data-test="NavLogo" class="nav__logo">
             <span class="nav__logo-circle">M</span>
             <span class="nav__logo-name">Marko Mirtic.</span>
             </a>
@@ -31,23 +31,23 @@
 
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">Home</a>
+                        <a data-test="HomeButtonHead" href="#home" class="nav__link active-link">Home</a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#about" class="nav__link">About Me</a>
+                        <a data-test="AboutButtonHead" href="#about" class="nav__link">About Me</a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#projects" class="nav__link">Projects</a>
+                        <a data-test="ProjectsButtonHead" href="#projects" class="nav__link">Projects</a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="https://qacademy.rs/" class="nav__link" target="_blank">QA Academy</a>
+                        <a data-test="QACademyButtonHead" href="https://qacademy.rs/" class="nav__link" target="_blank">QA Academy</a>
                     </li>
                 
                     <li class="nav__item">
-                        <a href="#contact" class="nav__link nav__link-button">Contact Me</a>
+                        <a data-test="ContactButtonHead" href="#contact" class="nav__link nav__link-button">Contact Me</a>
                     </li>
 
                 </ul>
@@ -90,13 +90,13 @@
                      </div>
 
                      <div class="home__social">
-                        <a href="https://www.instagram.com/qacademy.rs/" target="_blank" class="home__social-link">
+                        <a href="https://www.instagram.com/qacademy.rs/" target="_blank" data-test="InstagramButtonHead" class="home__social-link">
                             <i class="ri-instagram-line"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/markomirtic" target="_blank" class="home__social-link">
+                        <a href="https://www.linkedin.com/in/markomirtic" target="_blank" data-test="LinkedinButtonHead" class="home__social-link">
                             <i class="ri-linkedin-box-fill"></i>
                         </a>
-                        <a href="https://github.com/markomirtic" target="_blank" class="home__social-link">
+                        <a href="https://github.com/markomirtic" target="_blank" data-test="GithubButtonHead" class="home__social-link">
                             <i class="ri-github-fill"></i>
                         </a>
                      </div>
@@ -108,7 +108,7 @@
                     </p>
 
                     <a href="#about" class="home__scroll">
-                        <div class="home__scroll-box">
+                        <div data-test="ScrollDown"  class="home__scroll-box">
                             <i class="ri-arrow-down-s-line"></i>
                         </div>
 
@@ -155,11 +155,11 @@
                             </ul>
 
                             <div class="about__buttons">
-                                <a href="#contact" class="button">
+                                <a href="#contact" data-test="CotactMeButtonAboutMe" class="button">
                                     <i class="ri-send-plane-line"></i> Contact Me
                                 </a>
 
-                                <a href="https://www.linkedin.com/in/markomirtic" target="_blank" class="button__ghost">
+                                <a href="https://www.linkedin.com/in/markomirtic" target="_blank" data-test="LinkedinButtonContactMe" class="button__ghost">
                                     <i class="ri-linkedin-box-fill"></i>
                                 </a>
                             </div>
@@ -170,7 +170,7 @@
          </section>
 
          <!--==================== SERVICES ====================-->
-         <section class="services section">
+         <section class="services section" data-test="ServicesSection">
             <h2 class="section__title-2">
                 <span>Services.</span>
             </h2>
@@ -355,7 +355,7 @@
          <section class="contact section" id="contact">
             <div class="contact__container grid">
                 <div class="contact__data">
-                    <h2 class="section__title-2">
+                    <h2 class="section__title-2" data-test="ContactMeSection">
                         <span>Contact Me.</span>
                     </h2>
 
@@ -400,7 +400,7 @@
 
                         <p class="contact__message" id="contact-message"></p>
 
-                        <button type="submit" class="contact__button button">
+                        <button type="submit" data-test="SendMessageButton" class="contact__button button">
                             <i class="ri-send-plane-line">Send Message</i>
                         </button>
                     </form>
@@ -419,15 +419,15 @@
                     </div>
 
                     <div class="contact__social-links">
-                        <a href="https://www.facebook.com/marko.mirtic1/" target="_blank" class="contact__social-link">
+                        <a href="https://www.facebook.com/marko.mirtic1/" data-test="FacebookButtonBottom" target="_blank" class="contact__social-link">
                             <i class="ri-facebook-circle-line"></i>
                         </a>
 
-                        <a href="https://www.instagram.com/qacademy.rs/" target="_blank" class="contact__social-link">
+                        <a href="https://www.instagram.com/qacademy.rs/" target="_blank" data-test="InstagramButtonBottom" class="contact__social-link">
                             <i class="ri-instagram-line"></i>
                         </a>
 
-                        <a href="https://www.linkedin.com/in/markomirtic" target="_blank" class="contact__social-link">
+                        <a href="https://www.linkedin.com/in/markomirtic" target="_blank" data-test="LinkedinButtonBottom" class="contact__social-link">
                             <i class="ri-linkedin-box-line"></i>
                         </a>
                         
@@ -442,15 +442,15 @@
          <div class="footer__container container grid">
             <ul class="footer__links">
                 <li>
-                    <a href="#about" class="footer__link">About</a>
+                    <a href="#about" data-test="AboutFooterButton" class="footer__link">About</a>
                 </li>
 
                 <li>
-                    <a href="#services" class="footer__link">Services</a>
+                    <a href="#services" data-test="ServicesFooterButton" class="footer__link">Services</a>
                 </li>
 
                 <li>
-                    <a href="#projects" class="footer__link">Projects</a>
+                    <a href="#projects" data-test="ProjectsFooterButton" class="footer__link">Projects</a>
                 </li>
             </ul>
 
